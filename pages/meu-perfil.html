@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/geral.css">
+    <link rel="stylesheet" href="../styles/bootstrap.css">
+    <link rel="stylesheet" href="../styles/media.css">
+    <link rel="stylesheet" href="../styles/meu-perfil.css">
+    <link rel="shortcut icon" href="../images/banking.png" type="image/x-icon">
+    <title>Cadastro</title>
+</head>
+<body>
+    <!-- Barra de cabecalho -->
+    <header>
+        <nav class="navbar navbar-expand-sm py-3" id="alinhamento">
+            <!-- Logotipo -->
+            <div class="container"> 
+                <ul class="navbar-nav"  id="alinhamento-logo">
+                    <img src="../images/banking.png" alt="" width="50px" height="50px">
+                    <p class="h5 text-dark d-flex align-items-center" id="logotipo-titulo">Beer Distribuidora</p>
+                </ul>
+                
+              <!-- Menu normal -->
+                <ul class="navbar-nav" id="menu-principal" >
+                    <li class="navbar-item"><a class="nav-link text-dark" href="../index.html">Home</a></li>
+                    <li class="navbar-item"><a class="nav-link text-dark" href="login.html">Login</a></li>
+                    <li class="navbar-item"><a class="nav-link text-dark" href="#!">Cadastre-se</a></li>
+                </ul>
+            </div>
+
+            <!-- Menu responsivo -->
+            <div id="menu-response">
+              <ul class="navbar-nav ">
+                <li><button id="fecha-menu" class="botao-menu"></button></li>
+                <li class="navbar-item bt m-1 p-1" class="bt"><a class="nav-link text-dark" href="../index.html">Home</a></li>
+                <li class="navbar-item bt m-1 p-1" class="bt"><a class="nav-link text-dark" href="login.html">Login</a></li>
+                <li class="navbar-item bt m-1 p-1" class="bt"><a class="nav-link text-dark" href="#!">Cadastre-se</a></li>
+              </ul>
+            </div>
+
+            <!-- Botão-mobile -->
+            <div id="button-response">
+              <button id="abre-menu" class="botao-menu"></button>
+            </div>
+        </nav>
+    </header> 
+    
+     
+    <!-- Tela de perfil -->
+    <form action="login.html">
+        <section class="vh-100" id="caixa-full">
+            <div class="container py-3 h-100 d-flex justify-content-center" >
+                <div class="row d-flex justify-content-center align-items-center h-100" id="caixa3">
+                    <div class="col-12 col-md-8 col-lg-6 col-xl-5" id="caixa3">
+                        <div class="card shadow-2-strong" style="border-radius: 1rem; ">
+                            <div class="card-body px-2 text-center d-flex align-items-center justify-content-center flex-column h5test" id="caixa3" >
+                                <h5 class="px-2 h5test1">Meus dados</h5>
+                                <div class="form-outline mb-1 d-flex flex-wrap align-items-start">
+                                    <span class="meu-perfil-span"><b>ID: </b><i>NumF1cT1c10</i></span>
+                                    <span class="meu-perfil-span"><b>E-mail: </b>email@ficticio.com</span>
+                                    <span class="meu-perfil-span"><b>Telefone: </b>(61) 9-6161-6161</span>
+                                </div>
+
+                                <h5 class="px-2">Meus pedidos</h5>
+                                <div class="form-outline mb-1 d-flex flex-wrap align-items-start">
+                                    <div id="meus-pedidos">
+                                        <table class="table">
+                                            <tr>
+                                                <th class="px-5">ID</th>
+                                                <th class="px-4">Pedido</th>
+                                                <th class="px-4">Quantidade (un)</th>
+                                                <th class="px-4">Data do pedido</th>
+                                                <th class="px-4">Data da entrega</th>
+                                            </tr>
+                                            <tr>
+                                                <td>01</td>
+                                                <td>Skol Beats 360ml</td>
+                                                <td>5</td>
+                                                <td>16-05-2023</td>
+                                                <td>18-05-2023</td>
+                                            </tr>
+                                            <tr>
+                                                <td>02</td>
+                                                <td>Skol Beats 360ml</td>
+                                                <td>20</td>
+                                                <td>16-05-2023</td>
+                                                <td>18-05-2023</td>
+                                            </tr>
+                                            <tr>
+                                                <td>03</td>
+                                                <td>Skol Beats 360ml-testes-em-responsividade</td>
+                                                <td>30</td>
+                                                <td>16-05-2023</td>
+                                                <td>18-05-2023</td>
+                                            </tr>
+                                            <tr>
+                                                <td>04</td>
+                                                <td>Skol Beats 360ml jack-response</td>
+                                                <td>10</td>
+                                                <td>16-05-2023</td>
+                                                <td>18-05-2023</td>
+                                            </tr>
+                                            <tr>
+                                                <td>05</td>
+                                                <td>Skol Beats 360ml jack-response</td>
+                                                <td>10</td>
+                                                <td>16-05-2023</td>
+                                                <td>18-05-2023</td>
+                                            </tr>
+                                            <tr>
+                                                <td>06</td>
+                                                <td>Skol Beats 360ml jack-response</td>
+                                                <td>10</td>
+                                                <td>16-05-2023</td>
+                                                <td>18-05-2023</td>
+                                            </tr>
+                                            <tr>
+                                                <td>07</td>
+                                                <td>Skol Beats 360ml jack-response</td>
+                                                <td>10</td>
+                                                <td>16-05-2023</td>
+                                                <td>18-05-2023</td>
+                                            </tr>
+                                        </table>
+                                        <span><b>Fazer pedido</b></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </form>
+    <!-- Footer -->
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <span class="text-muted"><img src="../images/banking.png" style="width: 35px;">© 2023 Beer Distribuidora</span>
+            <span class="text-muted"><i>Layon Amorim</i></span>
+        </footer>
+      </div>
+      <script src="../scripts/script.js"></script>
+</body>
+</html>
+
+
+
+
+

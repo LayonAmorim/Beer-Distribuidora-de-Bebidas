@@ -1,0 +1,29 @@
+#caixa-full{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#caixa3{
+    width: 100%;
+    height: auto;
+}
+
+.meu-perfil-span{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+    padding: 5px;
+    margin: 25px;
+}
+
+#meus-pedidos{
+    height: auto;
+}
+
+table, th, td{
+    border: 1px solid #dee2e6;
+}
+
+/* h5 titulos */
+.h5test{
+    text-align: start;
+}

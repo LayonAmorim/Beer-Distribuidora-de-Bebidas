@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beer Distribuidora</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/geral.css">
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="shortcut icon" href="images/banking.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/media.css">
+</head>
+<body>
+    <!-- Barra de cabecalho -->
+    
+    <header>
+        <nav class="navbar navbar-expand-sm py-3" id="alinhamento">
+            <!-- Logotipo -->
+            <div class="container">
+                <ul class="navbar-nav"  id="alinhamento-logo">
+                    <img src="images/banking.png" alt="" width="50px" height="50px">
+                    <p class="h5 text-dark d-flex align-items-center" id="logotipo-titulo">Beer Distribuidora</p>
+                </ul>
+                
+              <!-- Menu normal -->
+                <ul class="navbar-nav" id="menu-principal" >
+                    <li class="navbar-item"><a class="nav-link text-dark" href="#!">Home</a></li>
+                    <li class="navbar-item"><a class="nav-link text-dark" href="pages/login.html">Login</a></li>
+                    <li class="navbar-item"><a class="nav-link text-dark" href="pages/register.html">Cadastre-se</a></li>
+                </ul>
+            </div>
+
+            <!-- Menu responsivo -->
+            <div id="menu-response">
+              <ul class="navbar-nav ">
+                <li><button id="fecha-menu" class="botao-menu"></button></li>
+                <li class="navbar-item bt m-1 p-1" class="bt"><a class="nav-link text-dark" href="#!">Home</a></li>
+                <li class="navbar-item bt m-1 p-1" class="bt"><a class="nav-link text-dark" href="pages/login.html">Login</a></li>
+                <li class="navbar-item bt m-1 p-1" class="bt"><a class="nav-link text-dark" href="pages/register.html">Cadastre-se</a></li>
+              </ul>
+            </div>
+
+            <!-- Botão-mobile -->
+            <div id="button-response">
+              <button id="abre-menu" class="botao-menu"></button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Página -->
+    <main>
+        <div class="container-fluid bg-transparent p-0" id="slider" >
+            <div id="barra" class="carousel slide" data-bs-ride="carousel">
+                <!-- SLIDES -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#barra" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#barra" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#barra" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner" style="width: 100%; height: 550px; display: flex; align-items: center;" >
+                    <div class="carousel-item active">
+                      <picture>
+                        <source media="(max-width: 400px)" srcset="images/response/bebida1/bebida1-400.jpg">
+                        <source media="(max-width: 580px)" srcset="images/response/bebida1/bebida1-580.jpg">
+                        <source media="(max-width: 850px)" srcset="images/response/bebida1/bebida1-850.jpg">
+                          <img src="images/bebida1.jpg" alt="bebida-propaganda" class="d-block" style="width:100%;">
+                      </picture>
+                    </div>
+                    <div class="carousel-item">
+                      <picture>
+                        <source media="(max-width: 400px)" srcset="images/response/bebida2/bebida2-400.png">
+                        <source media="(max-width: 580px)" srcset="images/response/bebida2/bebida2-580.png">
+                        <source media="(max-width: 850px)" srcset="images/response/bebida2/bebida2-850.png">
+                          <img src="images/bebida2.png" alt="bebida-propaganda" class="d-block" style="width:100%;">
+                      </picture>
+                    </div>
+                    <div class="carousel-item">
+                      <picture>
+                        <source media="(max-width: 400px)" srcset="images/response/bebida3/bebida3-400.jpg">
+                        <source media="(max-width: 580px)" srcset="images/response/bebida3/bebida3-580.jpg">
+                        <source media="(max-width: 850px)" srcset="images/response/bebida3/bebida3-850.jpg">
+                          <img src="images/bebida3.jpg" alt="bebida-propaganda" class="d-block" style="width:100%;">
+                      </picture>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#barra" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#barra" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+        <!-- Conteudo da página -->
+            <main>
+                <!-- Texto de cadastro -->
+                <section class="py-5 text-center container">
+                  <div class="row py-lg-5">
+                    <div class="col-lg-6 col-md-8 mx-auto">
+                      <h1 class="fw-light">Possuímos ótimas promoções</h1>
+                      <p class="lead text-muted">Cadastre-se para ver mais!</p>
+                      <p><a href="pages/register.html" class="btn btn-success my-2" >Fazer cadastro</a></p>
+                    </div>
+                  </div>
+                </section>
+              <!-- Fim texto de cadastro -->
+                <!-- Cards -->
+                <div class="album py-5 bg-light">
+                  <div class="container">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <!-- Primeiro card -->
+                      <div class="col">
+                        <div class="card shadow-sm h-100">
+                          <img src="images/itaipava.png" alt="itaipava" class="m-4 pb-3 border-bottom">
+                          <div class="card-body">
+                            <p class="card-text">Uma combinação de Jack Daniel's Tennessee Whiskey com um licor de mel de fabricação própria, que proporciona um sabor único e inconfundível. Com notas de mel e finalização naturalmente suave, Jack Daniel's Tennessee Honey oferece um sabor inesperado.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Segundo card -->
+                      <div class="col">
+                        <div class="card shadow-sm h-100">
+                          <img src="images/skolbeats.png" alt="skol-beats" class="m-4 pb-3 border-bottom">
+                          <div class="card-body">
+                            <p class="card-text ">É sempre incrível ver uma Heineken gelada, refrescante e de alta qualidade em qualquer lugar. Saboreada em todos os cantos do mundo desde 1873</p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Terceiro card -->
+                      <div class="col">
+                        <div class="card shadow-sm h-100">
+                          <img src="images/corona.png" alt="corona" class="m-4 pb-3 border-bottom" >  
+                          <div class="card-body">
+                            <p class="card-text">Combinando os mais requintados whiskies de malte e grão, este blended scotch whisky de pelo menos 12 anos é a nossa mistura emblemática – e nunca desaponta.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Fim cards -->
+              </main>
+    </main>
+    <!-- Footer -->
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <span class="text-muted"><img src="images/banking.png" style="width: 35px;">© 2023 Beer Distribuidora</span>
+            <span class="text-muted"><i>Layon Amorim</i></span>
+        </footer>
+      </div>
+      <script src="scripts/script.js"></script>
+</body>
+</html>

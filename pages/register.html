@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/geral.css">
+    <link rel="stylesheet" href="../styles/bootstrap.css">
+    <link rel="stylesheet" href="../styles/media.css">
+    <link rel="shortcut icon" href="../images/banking.png" type="image/x-icon">
+    <title>Cadastro</title>
+</head>
+<body>
+    <!-- Barra de cabecalho -->
+    <header>
+        <nav class="navbar navbar-expand-sm py-3" id="alinhamento">
+            <!-- Logotipo -->
+            <div class="container"> 
+                <ul class="navbar-nav"  id="alinhamento-logo">
+                    <img src="../images/banking.png" alt="" width="50px" height="50px">
+                    <p class="h5 text-dark d-flex align-items-center" id="logotipo-titulo">Beer Distribuidora</p>
+                </ul>
+                
+              <!-- Menu normal -->
+                <ul class="navbar-nav" id="menu-principal" >
+                    <li class="navbar-item"><a class="nav-link text-dark" href="../index.html">Home</a></li>
+                    <li class="navbar-item"><a class="nav-link text-dark" href="login.html">Login</a></li>
+                    <li class="navbar-item"><a class="nav-link text-dark" href="#!">Cadastre-se</a></li>
+                </ul>
+            </div>
+
+            <!-- Menu responsivo -->
+            <div id="menu-response">
+              <ul class="navbar-nav ">
+                <li><button id="fecha-menu" class="botao-menu"></button></li>
+                <li class="navbar-item bt m-1 p-1" class="bt"><a class="nav-link text-dark" href="../index.html">Home</a></li>
+                <li class="navbar-item bt m-1 p-1" class="bt"><a class="nav-link text-dark" href="login.html">Login</a></li>
+                <li class="navbar-item bt m-1 p-1" class="bt"><a class="nav-link text-dark" href="#!">Cadastre-se</a></li>
+              </ul>
+            </div>
+
+            <!-- Botão-mobile -->
+            <div id="button-response">
+              <button id="abre-menu" class="botao-menu"></button>
+            </div>
+        </nav>
+    </header> 
+    
+    <!-- Tela de login -->
+    <form action="login.html">
+        <section class="vh-100" id="tela-register-background" style="background-image: url(../images/duascervejas.jpg); background-position: center; background-repeat: no-repeat;">
+            <div class="container py-5 h-100">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col-12 col-md-8 col-lg-6 col-xl-5" >
+                        <div class="card shadow-2-strong" style="border-radius: 1rem; ">
+                            <div class="card-body px-5 text-center d-flex align-items-center justify-content-center flex-column">
+                                <!-- Texto da tela de login -->
+                                <h3 class="mb-5">Cadastro</h3>
+                                <!-- Inputs de Email e senha -->
+                                <div class="form-outline mb-4">
+                                    <input type="" id="name2" class="form-control form-control-lg" placeholder="Nome" autocomplete="off" required>
+                                </div>
+                                <div class="form-outline mb-4">
+                                    <input type="email" id="email2" class="form-control form-control-lg" placeholder="Email" autocomplete="off" required>
+                                </div>
+                                
+                                <div class="form-outline mb-4">
+                                    <input type="tel" id="tel2" class="form-control form-control-lg" placeholder="Telefone" autocomplete="off" required>
+                                </div>
+                                <div class="form-outline mb-4">
+                                    <input type="password" id="password2" class="form-control form-control-lg" placeholder="Senha" autocomplete="off" required>
+                                </div>
+                                <div class="form-outline mb-4">
+                                    <input type="password" id="password2" class="form-control form-control-lg" placeholder="Confirme a senha" autocomplete="off" required>
+                                </div>
+                                <div>
+                                    <!-- Area de checkbox -->
+                                    <a href="#!" class="d-flex justify-content-between mb-2 px-2" style="opacity: 70%;"><i>Termos de segurança e contratos</i></a>
+                                    <div class="row mb-2">
+                                        <div class="col d-flex justify-content-between px-4">
+                                        <!-- Checkbox do lembrar-me -->
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="checkbox1" required >
+                                                <label class="form-check-label mb-3" for="checkbox1">Li e aceito</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Botão de login -->
+                                    <button class="btn btn-primary btn-lg btn-block mb-3" type="submit">Cadastrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </form>
+    <!-- Footer -->
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <span class="text-muted"><img src="../images/banking.png" style="width: 35px;">© 2023 Beer Distribuidora</span>
+            <span class="text-muted"><i>Layon Amorim</i></span>
+        </footer>
+      </div>
+      <script src="../scripts/script.js"></script>
+</body>
+</html>
+
+
+
+
+
